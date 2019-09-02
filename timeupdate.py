@@ -55,7 +55,7 @@ def main():
             TARGET_TIME = f'{time_S[0]}:{time_S[1]}:00'
         else:
             TARGET_TIME = options.TARGET_TIME
-        if COMMAND == None:
+        if COMMAND == None or COMMAND == '':
             print("ERROR : No parameters found")
         else:
             print(f"\nCommand : {COMMAND}\nTime : {TARGET_TIME}\n")
